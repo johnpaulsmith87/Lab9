@@ -37,8 +37,9 @@ namespace Lab9
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
             app.UseStaticFiles();
+            app.UseDefaultFiles();
         }
     }
 }

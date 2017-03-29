@@ -10,10 +10,9 @@ using System.Xml.Serialization;
 using System.Collections;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
+// Fix this for RESTFUL api!
 namespace Lab9.Controllers
 {
-    [Route("api/[controller]")]
     public class RestaurantReviewController : Controller
     {
         private const string RESTAURANTXMLPATH = "xml/restaurant_reviews.xml";
@@ -24,26 +23,28 @@ namespace Lab9.Controllers
         {
             _env = env;
         }
-        // api/restaurantreview/GetRestaurantNames
-        public IEnumerable GetRestaurantNames()
+        // /restaurantreview/GetRestaurantNames
+        [HttpGet]
+        public IEnumerable<RestaurantReview> GetRestaurantNames()
         {
             var allRestaurants = GetXMLToList();
             return allRestaurants.Select(restaurant => new RestaurantReview(restaurant));
         }
 
-        // api/restaurantreview/GetRestaurantByName/name="..."
-        public IActionResult GetRestaurantByName(string name)
+        // /restaurantreview/GetRestaurantByName/name
+        [HttpGet]
+        public IActionResult GetRestaurantByName(string id)
         {
             //read xml into an object
             var allRestaurants = GetXMLToList();
 
             var selectedRestaurant = allRestaurants
                 .Select(restaurant => new RestaurantReview(restaurant))
-                .Single(restaurant => restaurant.Name == name);
+                .Single(restaurant => restaurant.Name == id);
 
             return new ObjectResult(selectedRestaurant);
         }
-
+        [HttpPost]
         public IActionResult SaveRestaurant(RestaurantReview restaurant)
         {
             var allRestaurants = GetXMLToList();

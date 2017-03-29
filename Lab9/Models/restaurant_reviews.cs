@@ -19,17 +19,23 @@ using System.Xml.Serialization;
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://www.algonquincollege.com/onlineservice/reviews", IsNullable = false)]
+public partial class Restaurants
+{
 
-public partial class Restaurants {
-    
     private RestaurantsRestaurant[] restaurantField;
-    
+
     /// <remarks/>
-    public RestaurantsRestaurant[] Restaurant {
-        get {
+    [System.Xml.Serialization.XmlElementAttribute("Restaurant")]
+    public RestaurantsRestaurant[] Restaurant
+    {
+        get
+        {
             return this.restaurantField;
         }
-        set {
+        set
+        {
             this.restaurantField = value;
         }
     }
@@ -39,124 +45,157 @@ public partial class Restaurants {
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class RestaurantsRestaurant {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public partial class RestaurantsRestaurant
+{
+
     private string nameField;
-    
+
     private string phoneNumberField;
-    
+
     private AddressType restaurantAddressField;
-    
+
     private RestaurantsRestaurantImage imageField;
-    
+
     private string logoField;
-    
+
     private System.DateTime dateField;
-    
+
     private int ratingField;
-    
+
     private string reviewerField;
-    
+
     private string summaryField;
-    
+
     private RestaurantsRestaurantMenu menuField;
-    
+
     /// <remarks/>
-    public string Name {
-        get {
+    public string Name
+    {
+        get
+        {
             return this.nameField;
         }
-        set {
+        set
+        {
             this.nameField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string PhoneNumber {
-        get {
+    public string PhoneNumber
+    {
+        get
+        {
             return this.phoneNumberField;
         }
-        set {
+        set
+        {
             this.phoneNumberField = value;
         }
     }
-    
+
     /// <remarks/>
-    public AddressType RestaurantAddress {
-        get {
+    public AddressType RestaurantAddress
+    {
+        get
+        {
             return this.restaurantAddressField;
         }
-        set {
+        set
+        {
             this.restaurantAddressField = value;
         }
     }
-    
+
     /// <remarks/>
-    public RestaurantsRestaurantImage Image {
-        get {
+    public RestaurantsRestaurantImage Image
+    {
+        get
+        {
             return this.imageField;
         }
-        set {
+        set
+        {
             this.imageField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string Logo {
-        get {
+    public string Logo
+    {
+        get
+        {
             return this.logoField;
         }
-        set {
+        set
+        {
             this.logoField = value;
         }
     }
-    
+
     /// <remarks/>
-    public System.DateTime Date {
-        get {
+    [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+    public System.DateTime Date
+    {
+        get
+        {
             return this.dateField;
         }
-        set {
+        set
+        {
             this.dateField = value;
         }
     }
-    
+
     /// <remarks/>
-    public int Rating {
-        get {
+    public int Rating
+    {
+        get
+        {
             return this.ratingField;
         }
-        set {
+        set
+        {
             this.ratingField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string Reviewer {
-        get {
+    public string Reviewer
+    {
+        get
+        {
             return this.reviewerField;
         }
-        set {
+        set
+        {
             this.reviewerField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string Summary {
-        get {
+    public string Summary
+    {
+        get
+        {
             return this.summaryField;
         }
-        set {
+        set
+        {
             this.summaryField = value;
         }
     }
-    
+
     /// <remarks/>
-    public RestaurantsRestaurantMenu Menu {
-        get {
+    public RestaurantsRestaurantMenu Menu
+    {
+        get
+        {
             return this.menuField;
         }
-        set {
+        set
+        {
             this.menuField = value;
         }
     }
@@ -166,52 +205,66 @@ public partial class RestaurantsRestaurant {
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class AddressType {
-    
+[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public partial class AddressType
+{
+
     private string addressField;
-    
+
     private string cityField;
-    
+
     private ProvinceType provinceField;
-    
+
     private string postalCodeField;
-    
+
     /// <remarks/>
-    public string Address {
-        get {
+    public string Address
+    {
+        get
+        {
             return this.addressField;
         }
-        set {
+        set
+        {
             this.addressField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string City {
-        get {
+    public string City
+    {
+        get
+        {
             return this.cityField;
         }
-        set {
+        set
+        {
             this.cityField = value;
         }
     }
-    
+
     /// <remarks/>
-    public ProvinceType Province {
-        get {
+    public ProvinceType Province
+    {
+        get
+        {
             return this.provinceField;
         }
-        set {
+        set
+        {
             this.provinceField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string PostalCode {
-        get {
+    public string PostalCode
+    {
+        get
+        {
             return this.postalCodeField;
         }
-        set {
+        set
+        {
             this.postalCodeField = value;
         }
     }
@@ -219,17 +272,19 @@ public partial class AddressType {
 
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-public enum ProvinceType {
-    
+[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public enum ProvinceType
+{
+
     /// <remarks/>
     Ontario,
-    
+
     /// <remarks/>
     Quebec,
-    
+
     /// <remarks/>
     Manitoba,
-    
+
     /// <remarks/>
     Alberta,
 }
@@ -238,76 +293,98 @@ public enum ProvinceType {
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class FoodItem {
-    
+[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public partial class FoodItem
+{
+
     private string itemDescriptionField;
-    
+
     private decimal itemPriceField;
-    
+
     private int piecesPerOrderField;
-    
+
     private bool piecesPerOrderFieldSpecified;
-    
+
     private decimal pricePerPieceField;
-    
+
     private bool pricePerPieceFieldSpecified;
-    
+
     /// <remarks/>
-    public string ItemDescription {
-        get {
+    public string ItemDescription
+    {
+        get
+        {
             return this.itemDescriptionField;
         }
-        set {
+        set
+        {
             this.itemDescriptionField = value;
         }
     }
-    
+
     /// <remarks/>
-    public decimal ItemPrice {
-        get {
+    public decimal ItemPrice
+    {
+        get
+        {
             return this.itemPriceField;
         }
-        set {
+        set
+        {
             this.itemPriceField = value;
         }
     }
-    
+
     /// <remarks/>
-    public int PiecesPerOrder {
-        get {
+    public int PiecesPerOrder
+    {
+        get
+        {
             return this.piecesPerOrderField;
         }
-        set {
+        set
+        {
             this.piecesPerOrderField = value;
         }
     }
-    
+
     /// <remarks/>
-    public bool PiecesPerOrderSpecified {
-        get {
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool PiecesPerOrderSpecified
+    {
+        get
+        {
             return this.piecesPerOrderFieldSpecified;
         }
-        set {
+        set
+        {
             this.piecesPerOrderFieldSpecified = value;
         }
     }
-    
+
     /// <remarks/>
-    public decimal PricePerPiece {
-        get {
+    public decimal PricePerPiece
+    {
+        get
+        {
             return this.pricePerPieceField;
         }
-        set {
+        set
+        {
             this.pricePerPieceField = value;
         }
     }
-    
+
     /// <remarks/>
-    public bool PricePerPieceSpecified {
-        get {
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool PricePerPieceSpecified
+    {
+        get
+        {
             return this.pricePerPieceFieldSpecified;
         }
-        set {
+        set
+        {
             this.pricePerPieceFieldSpecified = value;
         }
     }
@@ -317,28 +394,36 @@ public partial class FoodItem {
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class RestaurantsRestaurantImage {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public partial class RestaurantsRestaurantImage
+{
+
     private string imagePathField;
-    
+
     private string imageDimensionsField;
-    
+
     /// <remarks/>
-    public string ImagePath {
-        get {
+    public string ImagePath
+    {
+        get
+        {
             return this.imagePathField;
         }
-        set {
+        set
+        {
             this.imagePathField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string ImageDimensions {
-        get {
+    public string ImageDimensions
+    {
+        get
+        {
             return this.imageDimensionsField;
         }
-        set {
+        set
+        {
             this.imageDimensionsField = value;
         }
     }
@@ -348,40 +433,54 @@ public partial class RestaurantsRestaurantImage {
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class RestaurantsRestaurantMenu {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.algonquincollege.com/onlineservice/reviews")]
+public partial class RestaurantsRestaurantMenu
+{
+
     private FoodItem[] appetizersField;
-    
+
     private FoodItem[] entreesField;
-    
+
     private FoodItem[] dessertsField;
-    
+
     /// <remarks/>
-    public FoodItem[] Appetizers {
-        get {
+    [System.Xml.Serialization.XmlArrayItemAttribute("AppetizerFoodItem", IsNullable = false)]
+    public FoodItem[] Appetizers
+    {
+        get
+        {
             return this.appetizersField;
         }
-        set {
+        set
+        {
             this.appetizersField = value;
         }
     }
-    
+
     /// <remarks/>
-    public FoodItem[] Entrees {
-        get {
+    [System.Xml.Serialization.XmlArrayItemAttribute("EntreeFoodItem", IsNullable = false)]
+    public FoodItem[] Entrees
+    {
+        get
+        {
             return this.entreesField;
         }
-        set {
+        set
+        {
             this.entreesField = value;
         }
     }
-    
+
     /// <remarks/>
-    public FoodItem[] Desserts {
-        get {
+    [System.Xml.Serialization.XmlArrayItemAttribute("DessertFoodItem", IsNullable = false)]
+    public FoodItem[] Desserts
+    {
+        get
+        {
             return this.dessertsField;
         }
-        set {
+        set
+        {
             this.dessertsField = value;
         }
     }
