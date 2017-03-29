@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified"
+           targetNamespace="http://www.algonquincollege.com/onlineservice/reviews"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:target="http://www.algonquincollege.com/onlineservice/reviews">
+  <!-- I'm putting global types at the bottom -->
+  <xs:element name="Restaurants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Restaurant" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="PhoneNumber" type="xs:string" />
+              <xs:element name="RestaurantAddress" type="target:AddressType">
+              </xs:element>
+              <xs:element name="Image">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ImagePath" type="xs:string" />
+                    <xs:element name="ImageDimensions" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Logo" type="xs:string" />
+              <xs:element name="Date" type="xs:date">
+              </xs:element>
+              <xs:element name="Rating" type="target:RatingType" />
+              <xs:element name="Reviewer" type="xs:string" />
+              <xs:element name="Summary" type="xs:string" />
+              <xs:element name="Menu">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Appetizers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="AppetizerFoodItem" type="target:FoodItem" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Entrees">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EntreeFoodItem" type="target:FoodItem" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Desserts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DessertFoodItem" type="target:FoodItem" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Global Types -->
+  <xs:complexType name="FoodItem">
+    <xs:sequence>
+      <xs:element name="ItemDescription" type="xs:string" />
+      <xs:element name="ItemPrice" type="xs:decimal" />
+      <xs:element name="PiecesPerOrder" minOccurs="0" type="xs:int" />
+      <xs:element name="PricePerPiece" minOccurs="0" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="Address" type="xs:string"></xs:element>
+      <xs:element name="City" type="xs:string"></xs:element>
+      <xs:element name="Province" type="target:ProvinceType"></xs:element>
+      <xs:element name="PostalCode" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="RatingType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1"></xs:minInclusive>
+      <xs:maxInclusive value="5"></xs:maxInclusive>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProvinceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ontario"></xs:enumeration>
+      <xs:enumeration value="Quebec"></xs:enumeration>
+      <xs:enumeration value="Manitoba"></xs:enumeration>
+      <xs:enumeration value="Alberta"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

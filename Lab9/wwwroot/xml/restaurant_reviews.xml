@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<Restaurants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.algonquincollege.com/onlineservice/reviews">
+  <Restaurant>
+    <Name>Laughing Man</Name>
+    <PhoneNumber>613-123-4567</PhoneNumber>
+    <RestaurantAddress>
+      <Address>2100 Lakeview Road</Address>
+      <City>Kanata</City>
+      <Province>Ontario</Province>
+      <PostalCode>K2K 2K7</PostalCode>
+    </RestaurantAddress>
+    <Image>
+      <ImagePath>"laughing-man.gif"</ImagePath>
+      <ImageDimensions>50*200</ImageDimensions>
+    </Image>
+    <Logo>"Visit the Laughing Man"</Logo>
+    <Date>2015-01-10</Date>
+    <Rating>5</Rating>
+    <Reviewer>Hunter S. Thompson</Reviewer>
+    <Summary>Laughing Man Inn is a completely restored Victorian hotel, and offers a warm and elegant atmosphere and gracious service. Here are a few of the selections from the daily menu. EDIT</Summary>
+    <Menu>
+      <Appetizers>
+        <AppetizerFoodItem>
+          <ItemDescription>Crab cakes with a creamy dill sauce served with crispy herbed fries</ItemDescription>
+          <ItemPrice>23</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </AppetizerFoodItem>
+        <AppetizerFoodItem>
+          <ItemDescription>Garden vegetable soup with chocolate sauce</ItemDescription>
+          <ItemPrice>15</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </AppetizerFoodItem>
+      </Appetizers>
+      <Entrees>
+        <EntreeFoodItem>
+          <ItemDescription>Braised jumbo sea scallops on a sun-dried roast tomato base.</ItemDescription>
+          <ItemPrice>39</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+        <EntreeFoodItem>
+          <ItemDescription>Free-range chicken breast stuffed with morels in a brandy sauce.</ItemDescription>
+          <ItemPrice>31</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+        <EntreeFoodItem>
+          <ItemDescription>Roast pork loin on a bed of garlic ginger apple slaw.</ItemDescription>
+          <ItemPrice>34</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+      </Entrees>
+      <Desserts />
+    </Menu>
+  </Restaurant>
+  <Restaurant>
+    <Name>John and Paul The Wild Ride</Name>
+    <PhoneNumber>613-123-4567</PhoneNumber>
+    <RestaurantAddress>
+      <Address>2100 Sky Lake Boulevard</Address>
+      <City>Kanata</City>
+      <Province>Ontario</Province>
+      <PostalCode>K2K 2K7</PostalCode>
+    </RestaurantAddress>
+    <Image>
+      <ImagePath>"laughing-man.gif"</ImagePath>
+      <ImageDimensions>50*200</ImageDimensions>
+    </Image>
+    <Logo>"Visit ME"</Logo>
+    <Date>2015-01-10</Date>
+    <Rating>2</Rating>
+    <Reviewer>Hunter S. Thompson</Reviewer>
+    <Summary>John and Paul's Wild Ride is actually very tame. Watch OUT! Hi</Summary>
+    <Menu>
+      <Appetizers>
+        <AppetizerFoodItem>
+          <ItemDescription>Crab cakes with a creamy dill sauce served with crispy herbed fries</ItemDescription>
+          <ItemPrice>23</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </AppetizerFoodItem>
+        <AppetizerFoodItem>
+          <ItemDescription>Garden vegetable soup with chocolate sauce</ItemDescription>
+          <ItemPrice>15</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </AppetizerFoodItem>
+      </Appetizers>
+      <Entrees>
+        <EntreeFoodItem>
+          <ItemDescription>Braised jumbo sea scallops on a sun-dried roast tomato base.</ItemDescription>
+          <ItemPrice>39</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+        <EntreeFoodItem>
+          <ItemDescription>Free-range chicken breast stuffed with morels in a brandy sauce.</ItemDescription>
+          <ItemPrice>31</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+        <EntreeFoodItem>
+          <ItemDescription>Roast pork loin on a bed of garlic ginger apple slaw.</ItemDescription>
+          <ItemPrice>34</ItemPrice>
+          <PiecesPerOrder>1</PiecesPerOrder>
+        </EntreeFoodItem>
+      </Entrees>
+      <Desserts />
+    </Menu>
+  </Restaurant>
+</Restaurants>

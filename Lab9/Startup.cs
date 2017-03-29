@@ -38,6 +38,7 @@ namespace Lab9
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }
