@@ -2,9 +2,53 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
     <title></title>
 </head>
 <body>
-    <h1>Testing!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-4"><label>Select a Restaurant...</label></div>
+            <div class="col col-md-8">
+                <select id="drpRestaurant" class="form-control">
+                    <option value="-1">Please choose an option</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4"><label>Address:</label></div>
+            <div class="col col-md-8"><textarea id="txtAddress" class="form-control" readonly></textarea></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4"><label>Summary:</label></div>
+            <div class="col col-md-8"><textarea id="txtSummary" class="form-control"></textarea></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4"><label>Rating</label></div>
+            <div class="col col-md-8">
+                <select id="drpRating" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" id="btnSave" class="btn">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

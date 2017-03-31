@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 
 namespace Lab9.Models
 {
+    /// <summary>
+    /// POCO for RestaurantReview, designed for JSON serialization
+    /// </summary>
     public class RestaurantReview
     {
         public RestaurantReview()
         {
             //default constructor still needed
         }
-        /// <summary>
-        /// Creates JSON-ready object for xml
-        /// </summary>
+        
         public RestaurantReview(RestaurantsRestaurant restaurant)
         {
             Name = restaurant.Name;
